@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>學習網頁開發:實作個人履歷</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#point1").click(function () {
+          $("#photo1").fadeIn();
+          $("#photo2").fadeOut();
+          $("#photo3").fadeOut();
+
+          $("#point1").css("background-color", "lightseagreen");
+          $("#point2").css("background-color", "white");
+          $("#point3").css("background-color", "white");
+        });
+
+        $("#point2").click(function () {
+          $("#photo2").fadeIn();
+          $("#photo1").fadeOut();
+          $("#photo3").fadeOut();
+
+          $("#point2").css("background-color", "lightseagreen");
+          $("#point1").css("background-color", "white");
+          $("#point3").css("background-color", "white");
+        });
+
+        $("#point3").click(function () {
+          $("#photo3").fadeIn();
+          $("#photo1").fadeOut();
+          $("#photo2").fadeOut();
+
+          $("#point3").css("background-color", "lightseagreen");
+          $("#point1").css("background-color", "white");
+          $("#point2").css("background-color", "white");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="card">
+      <div id="photo">
+        <img src="Photo-1.jpg" width="238" height="244" id="photo1" />
+        <img src="Photo-2.jpg" width="238" height="244" id="photo2" />
+        <img src="Photo-3.jpg" width="238" height="244" id="photo3" />
+        <div class="point" id="point1"></div>
+        <div class="point" id="point2"></div>
+        <div class="point" id="point3"></div>
+      </div>
+      <div id="intro">
+        <h1>姓名:蕭哲廷</h1>
+        <h2>年齡:25 歲</h2>
+        <h2>居住地:新北市</h2>
+        <h2>應徵:前端工程師</h2>
+        <h3>座右銘:你不一定要很厲害，才能開始;你要開始，才能很厲害</h3>
+      </div>
+      <div id="about">
+        <h4><i class="fa-solid fa-user"></i>關於我</h4>
+        <p>
+          大家好，我是蕭哲廷，資工系畢業之後，工作一段時間後發現社會未來趨勢在於程式語言,進而不斷透過自學與不斷的練習，熟悉網頁前端技術與框架，希望未來可以進入這個行業。
+        </p>
+        <h4><i class="fa-solid fa-person-praying"></i>工作經歷</h4>
+        <ul>
+          <li>研華科技 作業員</li>
+          <li>融程電訊 系統工程師</li>
+          <li>廣積科技 系統工程師</li>
+        </ul>
+        <h4><i class="fa-solid fa-link-horizontal"></i>社群連結</h4>
+        <ul>
+          <li><a href="https://pda.104.com.tw/profile/preview?vno=750k27nxk">104人力銀行</a></li>
+          <li><a href="https://www.Facebook.com">Facebook</li>
+          <li><a href="https://www.instagram.com/p/Bxzpg_MpvyTEOf3iwefjAEqX3xHyTs0TbbfZVA0/">Instagram</li>
+          </ul>
+      </div>
+      <div id="other">
+        <h4><i class="fa-solid fa-face-smile"></i>個性</h4>
+        <div class="block">
+          <div class="left-text">內向</div>
+          <div class="right-text">外向</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar" id="green-bar1"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">理性</div>
+          <div class="right-text">感性</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar" id="green-bar2"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">謹慎</div>
+          <div class="right-text">冒險</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar" id="green-bar3"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">思考</div>
+          <div class="right-text">行動</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar" id="green-bar4"></div>
+        </div>
+        <h4><i class="fa-solid fa-hammer"></i>技能</h4>
+        <div class="block">
+          <div class="left-text">HTML</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar" id="green-bar5"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">CSS</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar" id="green-bar6"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">JaveScript</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar" id="green-bar7"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">ReactJS</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar" id="green-bar8"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
